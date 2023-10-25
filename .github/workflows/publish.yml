@@ -31,7 +31,7 @@ jobs:
     name: Validate Go modules
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # Use ref_name instead of ref so we always get the branch to pull our
           # latest commit from.
@@ -69,7 +69,7 @@ jobs:
     needs: gomod
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -101,7 +101,7 @@ jobs:
     needs: [gomod, generate]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -139,7 +139,7 @@ jobs:
       target-matrix: ${{ steps.set-matrix.outputs.matrix }}
       version: ${{ steps.version.outputs.version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -179,7 +179,7 @@ jobs:
       name: ${{ steps.build.outputs.name }}
       directory: ${{ steps.build.outputs.directory }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -226,7 +226,7 @@ jobs:
         tags:
           - [""]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -282,7 +282,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
@@ -309,7 +309,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
