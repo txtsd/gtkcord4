@@ -10,7 +10,7 @@ require (
 	github.com/diamondburned/gotk4/pkg v0.0.6-0.20230825053034-ad325703aa2e
 	github.com/diamondburned/gotkit v0.0.0-20230930214311-f664ea5c2236
 	github.com/diamondburned/ningen/v3 v3.0.1-0.20230908225032-f3dbe02c7c8d
-	github.com/dustin/go-humanize v1.0.0
+	github.com/dustin/go-humanize v1.0.1
 	github.com/enescakir/emoji v1.0.0
 	github.com/ianlancetaylor/cgosymbolizer v0.0.0-20220405231054-a1ae3e4bba26
 	github.com/pkg/errors v0.9.1
