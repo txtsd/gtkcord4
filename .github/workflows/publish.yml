@@ -353,7 +353,7 @@ jobs:
           VERSIONS: ${{ needs.build.outputs.versions }}
 
       - name: Update Nightly release
-        uses: andelf/nightly-release@ce2d0a30db8cf9f3920a4237d6a0b874400710c1
+        uses: andelf/nightly-release@46e2d5f80828ecc5c2c3c819eb31186a7cf2156c
         with:
           name: Nightly Release
           body: ${{ fromJSON(steps.generate-notes.outputs.body) }}
