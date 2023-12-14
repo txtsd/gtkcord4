@@ -206,7 +206,7 @@ jobs:
           VERSION: ${{ needs.build-init.outputs.version }}
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: gtkcord4-${{ steps.build.outputs.name }}
           path: ${{ steps.build.outputs.directory }}
@@ -271,7 +271,7 @@ jobs:
           TAGS: ${{ toJSON(matrix.tags) }}
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.build.outputs.name }}
           path: ${{ steps.build.outputs.path }}
