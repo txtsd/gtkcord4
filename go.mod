@@ -15,7 +15,7 @@ require (
 	github.com/ianlancetaylor/cgosymbolizer v0.0.0-20220405231054-a1ae3e4bba26
 	github.com/pkg/errors v0.9.1
 	github.com/sahilm/fuzzy v0.1.0
-	github.com/yuin/goldmark v1.5.6
+	github.com/yuin/goldmark v1.7.8
 )
 
 require (
