@@ -12,7 +12,7 @@ require (
 	github.com/diamondburned/ningen/v3 v3.0.1-0.20230908225032-f3dbe02c7c8d
 	github.com/dustin/go-humanize v1.0.1
 	github.com/enescakir/emoji v1.0.0
-	github.com/ianlancetaylor/cgosymbolizer v0.0.0-20220405231054-a1ae3e4bba26
+	github.com/ianlancetaylor/cgosymbolizer v0.0.0-20241018200449-3110c83c1dfc
 	github.com/pkg/errors v0.9.1
 	github.com/sahilm/fuzzy v0.1.0
 	github.com/yuin/goldmark v1.5.6
